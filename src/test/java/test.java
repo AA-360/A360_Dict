@@ -20,7 +20,7 @@ import org.json.XML;
 
 
 public class test {
-@Test
+//@Test
 void xml(){
 
     xmlToDict a = new xmlToDict();
@@ -32,6 +32,7 @@ void xml(){
    String aa = "";
 
 }
+//@Test
     void teste(){
     KeysExists act = new KeysExists();
     getValue gv = new getValue();

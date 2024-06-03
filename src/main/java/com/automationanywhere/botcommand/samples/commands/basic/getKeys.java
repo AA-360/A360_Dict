@@ -33,7 +33,7 @@ import static com.automationanywhere.commandsdk.model.DataType.DICTIONARY;
 //import java.Math;
 //import Math;
 
-//@BotCommand
+@BotCommand
 @CommandPkg(
         label = "getKeys",
         description = "get keys from dict",

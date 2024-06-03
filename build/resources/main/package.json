@@ -4,10 +4,38 @@
     "description": "",
     "group": "com.automationanywhere",
     "artifactName": "Dict_Uts",
-    "packageVersion": "1.5-20230130-171520",
-    "codeVersion": "1.5-20230130-171520",
+    "packageVersion": "1.6-20230804-174703",
+    "codeVersion": "1.6-20230804-174703",
     "author": "",
     "commands": [
+        {
+            "name": "getKeys",
+            "label": "getKeys",
+            "description": "get keys from dict",
+            "nodeLabel": "get keys from {{dict}}",
+            "mainClass": "com.automationanywhere.botcommand.samples.commands.basic.getKeysCommand",
+            "icon": "pkg.svg",
+            "returnType": "LIST",
+            "returnSubtype": "STRING",
+            "returnLabel": "",
+            "returnRequired": true,
+            "attributes": [
+                {
+                    "name": "dict",
+                    "label": "Dict:",
+                    "type": "DICTIONARY",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        },
+                        {
+                            "name": "VARIABLE_TYPE",
+                            "value": "DICTIONARY"
+                        }
+                    ]
+                }
+            ]
+        },
         {
             "name": "getValue",
             "label": "getValue",
